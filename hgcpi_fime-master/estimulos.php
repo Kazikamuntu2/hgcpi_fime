@@ -409,7 +409,7 @@
                                                     <td><?php echo $mostrar['ano'] ?></td>
                                                     <td><?php echo $mostrar['monto_mensual'] ?></td>
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="editarRegistroPremios(<?php echo $mostrar['id'] ?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario5" onclick="editarRegistroPremios(<?php echo $mostrar['id'] ?>)">Editar</button></center></td>
                                                     <td><center><button class="btn btn-danger" onclick="borrarRegistroPremios(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
