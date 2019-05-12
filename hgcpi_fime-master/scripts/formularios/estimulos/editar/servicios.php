@@ -12,13 +12,14 @@ if (mysqli_connect_errno()) {
 $ident = $_GET['ident'];
 
 $fecha = $_POST["fecha_servicio"];
+$insti = $_POST["institucion_solicitante"];
 $tipo_servicio = $_POST["tipo_servicio"];
 $tipo_prestado = $_POST["servicio_prestado"];
 $idusuario = "1815906";
 
 /* OBTENER LOS DATOS YA INGRESADOS DEL REGISTRO */
 $sql="UPDATE detalle_usuario_servicios_prestados 
-SET fecha_servicio='$fecha',tipo_servicio='$tipo_servicio',servicio_prestado='$tipo_prestado'
+SET tipo_servicio='$tipo_servicio',servicio_prestado='$tipo_prestado',institucion_solicitante='$insti',fecha_servicio='$fecha'
 WHERE id='$ident' 
 AND usuario_idusuario='$idusuario'";
 

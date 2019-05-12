@@ -40,19 +40,19 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="organo_presentado">Organo colegiado presentado</label>
-	                                                                          <input type="text" class="form-control" name="organo_presentado" required>
+	                                                                          <input type="text" class="form-control" name="organo_presentado" required value="<?php echo $mostrar['organo_colegiado'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de inicio</label>
 	                                                                            <div class="controls">
-	                                                                                <input type="text" name="fecha_inicio" class="tuiker form-control" required>
+	                                                                                <input type="text" name="fecha_inicio" class="tuiker form-control" required value="<?php echo $mostrar['fecha_inicio'] ?>">
 	                                                                                <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
 	                                                                            </div>
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de fin</label>
 	                                                                            <div class="controls">
-	                                                                                <input type="text" name="fecha_fin" class="tuiker form-control" required>
+	                                                                                <input type="text" name="fecha_fin" class="tuiker form-control" required value="<?php echo $mostrar['fecha_fin'] ?>">
 	                                                                                <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
 	                                                                            </div>
 	                                                                        </div>
@@ -66,25 +66,26 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        <div class="form-group">
 	                                                                          <label for="aprobado">¿Aprobado?</label>
 	                                                                          	<select name="aprobado" class="form-control custom-select" required>
-                                                                            		<option value="Si" selected>Si</option>
+                                                                            		<option value="<?php echo $mostrar['aprobado']?>">"<?php echo $mostrar['aprobado']?>"</option>
+                                                                            		<option value="Si">Si</option>
                                                                             		<option value="No">No</option>
 																		  		</select>
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="horas_semana">Horas a la semana</label>
-	                                                                          <input type="text" class="form-control" name="horas_semana" required>
+	                                                                          <input type="text" class="form-control" name="horas_semana" required value="<?php echo $mostrar['horas_semana'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="resultados">Resultados obtenidos en la gestión</label>
-	                                                                          <input type="text" class="form-control" name="resultados" required>
+	                                                                          <input type="text" class="form-control" name="resultados" required value="<?php echo $mostrar['resultado_obtenido'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="estado_gestion">Estado de la gestion</label>
-	                                                                          <input type="text" class="form-control" name="estado_gestion" required>
+	                                                                          <input type="text" class="form-control" name="estado_gestion" required value="<?php echo $mostrar['estado_gestion'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="ies_realiza_gestion">IES realiza gestión</label>
-	                                                                          <input type="text" class="form-control" name="ies_realiza_gestion" required>
+	                                                                          <input type="text" class="form-control" name="ies_realiza_gestion" required value="<?php echo $mostrar['ies_realiza_gestion'] ?>">
 	                                                                        </div>
 	                                                                    	<br>
 	                                                                        <center><input class="btn btn-dark btn-lg" type="submit" value="Guardar cambios"></center>

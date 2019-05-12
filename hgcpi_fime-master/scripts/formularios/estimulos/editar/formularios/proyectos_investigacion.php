@@ -32,7 +32,7 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Tipo de proyecto</label>
-	                                                                          <input type="text" class="form-control" name="tipo_proyecto" required>
+	                                                                          <input type="text" class="form-control" name="tipo_proyecto" required value="<?php echo $mostrar['tipo_proyecto'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Tipo de participación</label>
@@ -54,11 +54,11 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Tipo de patrocinador</label>
-	                                                                          <input type="text" class="form-control" name="tipo_patrocinador" required value="<?php echo $mostrar['tipo_participacion'] ?>">
+	                                                                          <input type="text" class="form-control" name="tipo_patrocinador" required value="<?php echo $mostrar['tipo_patrocinador'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Nombre de patrocinador</label>
-	                                                                          <input type="text" class="form-control" name="nombre_patrocinador" required>
+	                                                                          <input type="text" class="form-control" name="nombre_patrocinador" required value="<?php echo $mostrar['nombre_patrocinador'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Monto de apoyo</label>
@@ -66,7 +66,7 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Investigadores participantes</label>
-	                                                                          <textarea class="form-control" name="investigadores_participantes" rows="3" required></textarea>
+	                                                                          <textarea class="form-control" name="investigadores_participantes" rows="3" required><?php echo $mostrar['investigadores_participantes'] ?></textarea>
 	                                                                        </div>
 	                                                                    	<br>
 	                                                                        <center><input class="btn btn-dark btn-lg" type="submit" value="Guardar cambios"></center>

@@ -35,15 +35,15 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="nivel_acad">Nivel académico</label>
-	                                                                          <input type="text" class="form-control" name="nivel_acad" required>
+	                                                                          <input type="text" class="form-control" name="nivel_acad" required value="<?php echo $mostrar['nivel_academico'] ?>">
 	                                                                        </div>	
 	                                                                        <div class="form-group">
 	                                                                          <label for="grado_acad">Grado académico</label>
-	                                                                          <input type="text" class="form-control" name="grado_acad" required>
+	                                                                          <input type="text" class="form-control" name="grado_acad" required value="<?php echo $mostrar['grado_academico'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="ies_realiza_gestion">IES realiza gestión</label>
-	                                                                          <input type="text" class="form-control" name="ies_realiza_gestion" required>
+	                                                                          <input type="text" class="form-control" name="ies_realiza_gestion" required value="<?php echo $mostrar['ies_realiza_gestion'] ?>">
 	                                                                        </div>	
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de inicio</label>
@@ -61,19 +61,21 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="num_horas">Número de alumnos</label>
-	                                                                          <input type="text" class="form-control" name="num_horas" required>
+	                                                                          <input type="text" class="form-control" name="num_horas" required value="<?php echo $mostrar['numero_estudiantes'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="issn">Estado de la dirección</label>
 	                                                                          <select name="estado_direccion" class="custom-select" required>
-					                                                              <option value="Concluida" selected>Concluida</option>
-					                                                              <option value="En proceso">En proceso</option>
+	                                                                          	<option value="<?php echo $mostrar['estado_de_direccion']?>">"<?php echo $mostrar['estado_de_direccion']?>"</option>
+	                                                                          	<option>Concluida</option>
+					                                                            <option value="En proceso">En proceso</option>
 					                                                          </select>
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="considera_cv_ca">Considera C.V. de C.A.</label>
 	                                                                          <select name="considera_cv_ca"  class="custom-select" required>
-					                                                              <option value="Si" selected>Si</option>
+	                                                                          	<option value="<?php echo $mostrar['considera_cv_ca']?>">"<?php echo $mostrar['considera_cv_ca']?>"</option>
+					                                                              <option value="Si">Si</option>
 					                                                              <option value="No">No</option>
 					                                                          </select>
 	                                                                        </div>

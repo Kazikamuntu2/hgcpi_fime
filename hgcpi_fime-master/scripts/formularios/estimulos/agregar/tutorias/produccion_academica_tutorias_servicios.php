@@ -10,13 +10,14 @@ if (mysqli_connect_errno()) {
 
 /* RECIBIR LAS VARIABLES DESDE EL FORMULARIO */ 
 $fecha = $_POST["fecha_servicio"];
+$insti = $_POST["institucion_solicitante"];
 $tipo_servicio = $_POST["tipo_servicio"];
 $tipo_prestado = $_POST["servicio_prestado"];
 $idusuario = "1815906";
 
 $consulta = "INSERT INTO detalle_usuario_servicios_prestados /* tabla de destino */
-(tipo_servicio,servicio_prestado,fecha_servicio,usuario_idusuario) /* campos de destino, en el MISMO ORDEN que aparecen en la base de datos */
-VALUES ('$fecha','$tipo_servicio','$tipo_prestado','$idusuario')"; /* valores a insertar en los campos de destino */
+(tipo_servicio,servicio_prestado,institucion_solicitante,fecha_servicio,usuario_idusuario) /* campos de destino, en el MISMO ORDEN que aparecen en la base de datos */
+VALUES ('$tipo_servicio','$tipo_prestado','$insti','$fecha','$idusuario')"; /* valores a insertar en los campos de destino */
 
 if ($resultado = $mysqli->query($consulta)) {
     header("Location: ../../../../../estimulos.php"); //regresar a la convocatoria actual

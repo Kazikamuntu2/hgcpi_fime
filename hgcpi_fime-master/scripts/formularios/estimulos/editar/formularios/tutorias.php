@@ -40,11 +40,11 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Tipo de periodo escolar</label>
-	                                                                          <input type="text" class="form-control" name="tipo_periodo_escolar" required>
+	                                                                          <input type="text" class="form-control" name="tipo_periodo_escolar" required value="<?php echo $mostrar['tipo_periodo_escolar'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Periodo escolar</label>
-	                                                                          <input type="text" class="form-control" name="periodo_escolar" required>
+	                                                                          <input type="text" class="form-control" name="periodo_escolar" required value="<?php echo $mostrar['periodo_escolar'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de inicio</label>
@@ -56,13 +56,13 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de fin</label>
 	                                                                            <div class="controls">
-	                                                                                <input type="text" name="fecha_fin" class="tuiker form-control" required value="<?php echo $mostrar['fecha_de_inicio'] ?>">
+	                                                                                <input type="text" name="fecha_fin" class="tuiker form-control" required value="<?php echo $mostrar['fecha_de_fin'] ?>">
 	                                                                                <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
 	                                                                            </div>
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Area del conocimiento de la tutoría</label>
-	                                                                          <input type="text" class="form-control" name="area_conocimiento_tutoria" required>
+	                                                                          <input type="text" class="form-control" name="area_conocimiento_tutoria" required value="<?php echo $mostrar['area_conocimiento'] ?>">
 	                                                                        </div>
 	                                                                    	<br>
 	                                                                        <center><input class="btn btn-dark btn-lg" type="submit" value="Guardar cambios"></center>

@@ -36,19 +36,19 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="tipo_evento">Tipo de evento</label>
-	                                                                          <input type="text" class="form-control" name="tipo_evento" required>
+	                                                                          <input type="text" class="form-control" name="tipo_evento" required value="<?php echo $mostrar['tipo_evento'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="tipo_participacion">Tipo de participación</label>
-	                                                                          <input type="text" class="form-control" name="tipo_participacion" required>
+	                                                                          <input type="text" class="form-control" name="tipo_participacion" required value="<?php echo $mostrar['tipo_participacion'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="tipo_alcance">Tipo de alcance</label>
-	                                                                          <input type="text" class="form-control" name="tipo_alcance" required>
+	                                                                          <input type="text" class="form-control" name="tipo_alcance" required value="<?php echo $mostrar['tipo_alcance'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="ies_realiza_gestion">IES realiza gestión</label>
-	                                                                          <input type="text" class="form-control" name="ies_realiza_gestion" required>
+	                                                                          <input type="text" class="form-control" name="ies_realiza_gestion" required value="<?php echo $mostrar['ies_realiza_gestion'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de inicio</label>
@@ -66,7 +66,7 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="estado_gestion">Estado gestión</label>
-	                                                                          <input type="text" class="form-control" name="estado_gestion" required>
+	                                                                          <input type="text" class="form-control" name="estado_gestion" required value="<?php echo $mostrar['estado_gestion'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="calificacion">Calificación</label>

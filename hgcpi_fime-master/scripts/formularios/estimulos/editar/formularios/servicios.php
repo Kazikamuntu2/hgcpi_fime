@@ -36,7 +36,7 @@ $mostrar=mysqli_fetch_array($result);
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                          <label for="">Institucion solicitante</label>
-	                                                                          <input type="text" class="form-control" name="institucion_solicitante" required>
+	                                                                          <input type="text" class="form-control" name="institucion_solicitante" required value="<?php echo $mostrar['institucion_solicitante'] ?>">
 	                                                                        </div>
 	                                                                        <div class="form-group">
 	                                                                            <label for="datepicker" class="control-label">Fecha de servicio</label>

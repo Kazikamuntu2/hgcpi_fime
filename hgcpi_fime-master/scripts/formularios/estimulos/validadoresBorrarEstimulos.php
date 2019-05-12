@@ -130,7 +130,7 @@ function borrarRegistroCuerposCole(id)
            $.ajax(
               {
                 type: "POST",
-                url: "scripts/formularios/estimulos/borrar/gestion_academica_cuerpos.php.php",
+                url: "scripts/formularios/estimulos/borrar/gestion_academica_cuerpos.php",
                 data:cadena,
                 success:function(r){alert("Registro eliminado existosamente."); location.reload();}
               }
